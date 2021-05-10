@@ -30,10 +30,14 @@ class PlayViewController: UIViewController {
         start()
     }
     
-    @IBAction func mole(_ sender: Any) {
-        point += 1
+    @IBAction func mole(sender: UIButton) {
+        let id: Int = Int(sender.tag)
+        if id % 2 == 0 {
+            point += 2
+        }else {
+            point += 1
+        }
         pointLabel.text = String(point)
-        
     }
     
     func performSegueToResult() {
