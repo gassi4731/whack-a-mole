@@ -13,6 +13,8 @@
 		75C9178C2649458B0026FC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C9178A2649458B0026FC21 /* Main.storyboard */; };
 		75C9178E2649458C0026FC21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C9178D2649458C0026FC21 /* Assets.xcassets */; };
 		75C917912649458C0026FC21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C9178F2649458C0026FC21 /* LaunchScreen.storyboard */; };
+		75C9179B264947740026FC21 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9179A264947740026FC21 /* PlayViewController.swift */; };
+		75C9179D264952250026FC21 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9179C264952250026FC21 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		75C9178D2649458C0026FC21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C917902649458C0026FC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C917922649458C0026FC21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C9179A264947740026FC21 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		75C9179C264952250026FC21 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				75C9178D2649458C0026FC21 /* Assets.xcassets */,
 				75C9178F2649458C0026FC21 /* LaunchScreen.storyboard */,
 				75C917922649458C0026FC21 /* Info.plist */,
+				75C9179A264947740026FC21 /* PlayViewController.swift */,
+				75C9179C264952250026FC21 /* ResultViewController.swift */,
 			);
 			path = mole;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C9179D264952250026FC21 /* ResultViewController.swift in Sources */,
+				75C9179B264947740026FC21 /* PlayViewController.swift in Sources */,
 				75C917892649458B0026FC21 /* ViewController.swift in Sources */,
 				75C917852649458B0026FC21 /* AppDelegate.swift in Sources */,
 				75C917872649458B0026FC21 /* SceneDelegate.swift in Sources */,
