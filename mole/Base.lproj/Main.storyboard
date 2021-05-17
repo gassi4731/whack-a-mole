@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="RiiMonakaBLt.otf">
+            <string>RiiMonakaBlackTest-L</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,10 +33,10 @@
                                 <rect key="frame" x="60" y="257" width="294" height="306"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="もぐらたたき" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuJ-kA-OfD">
-                                <rect key="frame" x="155" y="223" width="104" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="もぐらたたき" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuJ-kA-OfD">
+                                <rect key="frame" x="91" y="152" width="233" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="RiiMonakaBlackTest-L" family="RiiMonakaBlackTest" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,38 +57,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-a7-01B">
-                                <rect key="frame" x="83" y="77" width="248" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_natural_sougen" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-hQ-kLk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgn-Te-kYx">
+                                <rect key="frame" x="0.0" y="90" width="414" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgn-Te-kYx">
-                                <rect key="frame" x="186" y="106" width="42" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj5-a7-01B">
+                                <rect key="frame" x="0.0" y="54" width="414" height="26"/>
+                                <fontDescription key="fontDescription" name="RiiMonakaBlackTest-L" family="RiiMonakaBlackTest" pointSize="0.0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNs-kQ-ehg">
-                                <rect key="frame" x="232" y="386" width="137" height="85"/>
+                                <rect key="frame" x="56" y="390" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="animal_mogura"/>
                                 <connections>
                                     <action selector="moleWithSender:" destination="BKZ-a1-NLg" eventType="touchUpInside" id="ZrN-Y4-GBV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFG-z2-kGa">
-                                <rect key="frame" x="49" y="359" width="137" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="animal_mogura_kouji2"/>
-                                <connections>
-                                    <action selector="moleWithSender:" destination="BKZ-a1-NLg" eventType="touchUpInside" id="4ZI-bn-eat"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzh-1t-2rU">
-                                <rect key="frame" x="49" y="205" width="137" height="85"/>
+                                <rect key="frame" x="224" y="210" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="animal_mogura"/>
                                 <connections>
@@ -91,16 +89,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-t4-Ueb">
-                                <rect key="frame" x="232" y="187" width="137" height="121"/>
+                                <rect key="frame" x="56" y="210" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="animal_mogura_kouji2"/>
                                 <connections>
                                     <action selector="moleWithSender:" destination="BKZ-a1-NLg" eventType="touchUpInside" id="fvk-Eo-KRg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFG-z2-kGa">
+                                <rect key="frame" x="224" y="390" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="animal_mogura_kouji2"/>
+                                <connections>
+                                    <action selector="moleWithSender:" destination="BKZ-a1-NLg" eventType="touchUpInside" id="4ZI-bn-eat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PKX-NV-B97"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qgn-Te-kYx" firstAttribute="top" secondItem="Zj5-a7-01B" secondAttribute="bottom" constant="10" id="AAO-4e-TSP"/>
+                            <constraint firstItem="nHT-hQ-kLk" firstAttribute="leading" secondItem="PKX-NV-B97" secondAttribute="leading" id="ERw-l2-CPU"/>
+                            <constraint firstItem="PKX-NV-B97" firstAttribute="trailing" secondItem="Zj5-a7-01B" secondAttribute="trailing" id="Ir4-SM-vTo"/>
+                            <constraint firstItem="PKX-NV-B97" firstAttribute="bottom" secondItem="nHT-hQ-kLk" secondAttribute="bottom" id="Nb1-Au-8J3"/>
+                            <constraint firstItem="Zj5-a7-01B" firstAttribute="leading" secondItem="PKX-NV-B97" secondAttribute="leading" id="Q4n-lN-xTL"/>
+                            <constraint firstItem="qgn-Te-kYx" firstAttribute="leading" secondItem="PKX-NV-B97" secondAttribute="leading" id="aQD-b6-2jg"/>
+                            <constraint firstItem="PKX-NV-B97" firstAttribute="trailing" secondItem="qgn-Te-kYx" secondAttribute="trailing" id="g5I-lD-9Jx"/>
+                            <constraint firstItem="Zj5-a7-01B" firstAttribute="top" secondItem="PKX-NV-B97" secondAttribute="top" constant="80" id="gbC-Hs-LCh"/>
+                            <constraint firstItem="PKX-NV-B97" firstAttribute="trailing" secondItem="nHT-hQ-kLk" secondAttribute="trailing" id="uyd-Si-ttZ"/>
+                            <constraint firstItem="nHT-hQ-kLk" firstAttribute="top" secondItem="PKX-NV-B97" secondAttribute="top" id="w7t-Y7-F3N"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="liu-RH-FR1"/>
                     <connections>
@@ -161,8 +179,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="animal_mogura" width="400" height="223"/>
+        <image name="animal_mogura" width="252" height="252"/>
         <image name="animal_mogura_kouji2" width="400" height="331"/>
+        <image name="bg_natural_sougen" width="600" height="338"/>
         <image name="game_moguratataki" width="400" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

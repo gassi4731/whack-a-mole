@@ -17,16 +17,17 @@ class PlayViewController: UIViewController {
     @IBOutlet var pointLabel: UILabel!
     
     var timer: Timer = Timer()
-    var count: Float = 30.0
+    var count: Float = 15.0
     var point: Int = 0
     var didIntCount: Int = 0
+    var buttons: [UIButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        moleButton1.isHidden = true
-        moleButton2.isHidden = true
-        moleButton3.isHidden = true
-        moleButton4.isHidden = true
+        
+        buttons = [moleButton1, moleButton2, moleButton3, moleButton4]
+        _ = buttons.map{ $0.isHidden = true }
+        
         start()
     }
     
@@ -77,29 +78,13 @@ class PlayViewController: UIViewController {
         var intCount: Int = Int(count*5)
         if intCount != didIntCount{
             if intCount % 3 == 0 {
-                if !moleButton1.isHidden{
-                    moleButton1.isHidden = true
-                }else if Bool.random(){
-                    moleButton1.isHidden = false
-                }
+                moleButton1.isHidden = !moleButton1.isHidden ? true : Bool.random()
             } else if intCount & 4 == 0 {
-                if !moleButton2.isHidden{
-                    moleButton2.isHidden = true
-                }else if Bool.random(){
-                    moleButton2.isHidden = false
-                }
+                moleButton2.isHidden = !moleButton2.isHidden ? true : Bool.random()
             } else if intCount & 2 == 0 {
-                if !moleButton3.isHidden{
-                    moleButton3.isHidden = true
-                }else if Bool.random(){
-                    moleButton3.isHidden = false
-                }
+                moleButton3.isHidden = !moleButton3.isHidden ? true : Bool.random()
             } else if intCount & 5 == 0 {
-                if !moleButton4.isHidden{
-                    moleButton4.isHidden = true
-                }else if Bool.random(){
-                    moleButton4.isHidden = false
-                }
+                moleButton4.isHidden = !moleButton4.isHidden ? true : Bool.random()
             }
             
             didIntCount = intCount
@@ -107,10 +92,7 @@ class PlayViewController: UIViewController {
         
         if count <= 0 {
             self.stop()
-            moleButton1.isEnabled = false
-            moleButton2.isEnabled = false
-            moleButton3.isEnabled = false
-            moleButton4.isEnabled = false
+            _ = buttons.map{ $0.isHidden = false }
             performSegueToResult()
         }
     }
